@@ -25,3 +25,14 @@
 .contact-social{font-size:10px;font-weight:700;color:#23351a}
 .contact-social:hover{text-decoration:underline}
 @media(max-width:700px){.career-grid{grid-template-columns:1fr;gap:20px}.career-side{gap:10px}.career-panel{padding:20px}.contact-links{gap:14px}.association-list li{align-items:flex-start}}
+
+
+/* Personal portrait in the hero */
+.hero-portrait{overflow:visible;isolation:isolate}
+.hero-portrait .profile-portrait{position:relative;z-index:1;width:min(100%,430px);height:470px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 24px 45px rgba(0,0,0,.48));}
+.hero-portrait .portrait-glow{position:absolute;z-index:0;width:290px;height:290px;border-radius:50%;background:radial-gradient(circle,rgba(196,240,107,.16),rgba(196,240,107,0) 70%);top:22%;left:50%;transform:translateX(-50%)}
+.hero-portrait .orbit-a{z-index:-1}
+.hero-portrait .orbit-b{z-index:-1}
+.hero-portrait .card-code,.hero-portrait .card-stack,.hero-portrait .art-coordinate{z-index:2}
+@media(max-width:900px){.hero-portrait{height:390px}.hero-portrait .profile-portrait{height:390px;width:min(100%,360px)}}
+@media(max-width:600px){.hero-portrait{height:350px;margin-top:10px}.hero-portrait .profile-portrait{height:350px;width:min(100%,330px)}.hero-portrait .card-code{right:-3px;top:24px}.hero-portrait .card-stack{left:-3px;bottom:32px}.hero-portrait .art-coordinate{right:0;bottom:5px}}
