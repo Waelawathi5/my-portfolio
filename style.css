@@ -115,3 +115,24 @@ body{background:var(--bg);color:var(--text)}
 .footer .brand{color:#172333}
 @media(max-width:900px){.hero{grid-template-columns:1fr 1fr;min-height:610px}.hero-portrait .profile-portrait{width:100%;height:390px}}
 @media(max-width:700px){.site-header{height:72px}.nav{background:#fff;border:1px solid var(--line);box-shadow:0 12px 30px rgba(20,35,55,.1)}.nav a{color:#34445a}.hero{grid-template-columns:1fr;padding-top:42px;min-height:unset}.hero-copy{order:1}.hero-portrait{order:2;height:360px;margin-top:25px}.hero-portrait .profile-portrait{height:350px;width:min(100%,350px)}.hero-meta{flex-wrap:wrap;gap:13px}.section-space{padding-top:68px}.about-grid{gap:30px}.section-intro{display:block}.section-intro p{margin-top:16px}.skill-grid{grid-template-columns:1fr}.career-grid{grid-template-columns:1fr}.footer{gap:15px}}
+
+
+/* Circular portrait on a clean white background */
+.hero-portrait .profile-portrait{
+  width: min(100%, 390px);
+  height: 390px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 28%;
+  border-radius: 50%;
+  background: #fff;
+  border: 7px solid #fff;
+  box-shadow: 0 12px 38px rgba(15, 35, 70, .12);
+  filter: none;
+}
+@media(max-width:900px){
+  .hero-portrait .profile-portrait{width:min(100%,340px);height:340px}
+}
+@media(max-width:600px){
+  .hero-portrait .profile-portrait{width:min(100%,300px);height:300px}
+}
